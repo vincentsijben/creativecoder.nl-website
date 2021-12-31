@@ -1,0 +1,6 @@
+section { margin-inline: auto; width: 500px; background: silver; 
+padding: 40px; }
+section img { display: block; margin-inline: auto; }
+body { padding-top: 100px; font-family: 'Overpass', sans-serif; }
+p { text-align: center;}
+a { color: black; }
