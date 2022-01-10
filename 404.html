@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creativecoder.nl</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <section>
+        <img src="img/redirect.png" width="100" alt="redirect image">
+        <p></p>
+    </section>
+
+    <script>
+        let count = 5;
+        let url = 'https://genart.nl';
+        let text = `You are being redirected to <a href="${url}">${url}</a> in <span
+                id="countdown">${count}</span> seconds.`
+        document.querySelector('section p').innerHTML = text;
+        setInterval(function () {
+            count--;
+            if (count == 0) window.location.replace(url);
+            else document.querySelector('#countdown').innerText = count;
+        }, 1000);
+    </script>
+
+</body>
+
+</html>
